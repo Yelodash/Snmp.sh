@@ -27,12 +27,15 @@ Example:
 
 Usage example (which works most of the time for CTFs when Snmp is open):
 
-```
-Examples:
+Example:
+
+```shell
   # Basic scan, autodetect version and string and scan using mibs directly
   snmp.sh -t 10.10.10.100 --extras
+```
 
-**Options**
+
+Options: 
 
 ```
 Required:
@@ -61,7 +64,3 @@ Output Options:
   --html                   Generate HTML report
   --verbose               Enable verbose output
 ```
-
-
-
-
