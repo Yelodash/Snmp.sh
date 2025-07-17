@@ -33,6 +33,7 @@ Examples:
   snmp.sh -t 10.10.10.100 --extras
 
 **Options**
+
 ```
 Required:
   -t, --target <IP/HOST>   Target IP or hostname
