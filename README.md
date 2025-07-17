@@ -13,7 +13,7 @@ Requirements:
 - `jq`
 - `parallel`
 
-In `/etc/snmp/snmp.conf'
+In '/etc/snmp/snmp.conf'
 - has **mibs** commented with `#`
 
 Example:
