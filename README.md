@@ -1,6 +1,6 @@
 # Snmp.sh
 
-All in one SNMP Enumeration Tool
+All in one SNMP Enumeration Tool that I use for CTFs. it will autodetect the snmp version, do a scan of the mibs and make a folder with all the txt with leaked information about the target.
 
 ```
 Required:
