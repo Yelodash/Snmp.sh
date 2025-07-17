@@ -25,8 +25,14 @@ Example:
 #mibs :
 ```
 
+Usage example (which works most of the time for CTFs when Snmp is open):
 
+```
+Examples:
+  # Basic scan, autodetect version and string and scan using mibs directly
+  snmp.sh -t 10.10.10.100 --extras
 
+**Options**
 ```
 Required:
   -t, --target <IP/HOST>   Target IP or hostname
@@ -55,18 +61,6 @@ Output Options:
   --verbose               Enable verbose output
 ```
 
-Usage example:
 
-```
-Examples:
-  # Basic scan
-  /home/blacklotus/Desktop/Scripts/snmp.sh -t 10.10.10.100
 
-  # Comprehensive scan with all features
-  /home/blacklotus/Desktop/Scripts/snmp.sh -t 10.10.10.100 --brute --extras --json --html
 
-  # SNMPv3 scan
-  /home/blacklotus/Desktop/Scripts/snmp.sh -t 10.10.10.100 -v 3 --v3-user admin --v3-level authPriv \
-     --v3-auth-proto SHA --v3-auth-pass MyAuthPass \
-     --v3-priv-proto AES --v3-priv-pass MyPrivPass
-```
