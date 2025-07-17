@@ -1,6 +1,30 @@
 # Snmp.sh
 
-All in one SNMP Enumeration Tool that I use for CTFs. it will autodetect the snmp version, do a scan of the mibs and make a folder with all the txt with leaked information about the target.
+**All in one SNMP Enumeration Tool**
+
+that I use for CTFs. it will autodetect the snmp version, do a scan of the mibs and make a folder with all the txt with leaked information about the target. it  Enumerates MIBs using various tools on from the Kali repo.
+
+Requirements:
+- `snmpwalk`
+- `snmpbulkwalk`
+- `snmpget`
+- `snmpset`
+- `snmp-mibs-downloader`
+- `jq`
+- `parallel`
+
+In `/etc/snmp/snmp.conf'
+- has **mibs** commented with `#`
+
+Example:
+```
+# As the snmp packages come without MIB files due to license reasons, loading
+# of MIBs is disabled by default. If you added the MIBs you can reenable
+# loading them by commenting out the following line.
+#mibs :
+```
+
+
 
 ```
 Required:
