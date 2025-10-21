@@ -4,6 +4,13 @@
 
 A tool that I made for CTFs when SNMP is up. it will autodetect the snmp version, do a scan of the mibs and make a folder with all the txt with leaked information about the target. it  Enumerates MIBs using various tools on from the Kali repo.
 
+Convenient use:
+
+``
+chmod +x snmp.sh
+cp snmp.sh /usr/local/bin/
+``
+
 Requirements:
 - `snmpwalk`
 - `snmpbulkwalk`
