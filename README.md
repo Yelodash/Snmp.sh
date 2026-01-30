@@ -15,9 +15,7 @@ A tool that I made for CTFs when SNMP is up. it will autodetect the snmp version
 - `jq`
 - `parallel`
 
-In  `/etc/snmp/snmp.conf`
-
-- please ensure that **mibs** is commented.
+In  `/etc/snmp/snmp.conf` please ensure that **mibs** is commented.
 
 ```
 #mibs
