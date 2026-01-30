@@ -19,20 +19,16 @@ In  `/etc/snmp/snmp.conf`
 
 - please ensure that **mibs** is commented.
 
+```
+#mibs
+```
 #### Do this for convenient use:
 
 ``
 chmod +x snmp.sh
 cp snmp.sh /usr/local/bin/
 ``
-
 **Example:**
-```
-# As the snmp packages come without MIB files due to license reasons, loading
-# of MIBs is disabled by default. If you added the MIBs you can reenable
-# loading them by commenting out the following line.
-#mibs :
-```
 
 Usage example (which works most of the time for CTFs when Snmp is open):
 
@@ -42,7 +38,7 @@ Usage example (which works most of the time for CTFs when Snmp is open):
   # Basic scan, autodetect version and string and scan using mibs directly
   snmp.sh -t 10.10.10.100 --extras
 ```
-
+----
 ### Options: 
 
 ```
@@ -72,3 +68,4 @@ Output Options:
   --html                   Generate HTML report
   --verbose               Enable verbose output
 ```
+----
